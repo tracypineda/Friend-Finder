@@ -34,11 +34,11 @@ module.exports = function(app){
       }
     }
 
+    //pushes new submission into the friendsList array
+    friendList.push(req.body);
     //return bestMatch data
     var bff = friendList[bestMatch];
     res.json(bff);
 
-    //pushes new submission into the friendsList array
-    friendList.push(req.body);
   });
 };

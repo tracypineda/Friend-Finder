@@ -38,7 +38,7 @@
 
         <h5><strong>Question 1</strong></h5>
         <p>I see myself as extroverted, enthusiastic.</p>
-        <select data-placeholder="" class="browser-default" id="q1">
+        <select data-placeholder="" class="chosen-select" id="q1">
             <option value="">Choose an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -48,7 +48,7 @@
         </select>
         <h5><strong>Question 2</strong></h5>
         <p>I see myself as extroverted, enthusiastic.</p>
-        <select data-placeholder="" class="browser-default" id="q2">
+        <select data-placeholder="" class="chosen-select" id="q2">
             <option value="">Choose an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -59,7 +59,7 @@
 
         <h5><strong>Question 3</strong></h5>
         <p>I see myself as extroverted, enthusiastic.</p>
-        <select data-placeholder="" class="browser-default" id="q3">
+        <select data-placeholder="" class="chosen-select" id="q3">
             <option value="">Choose an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -70,7 +70,7 @@
 
         <h5><strong>Question 4</strong></h5>
         <p>I see myself as extroverted, enthusiastic.</p>
-        <select data-placeholder="" class="browser-default" id="q4">
+        <select data-placeholder="" class="chosen-select" id="q4">
             <option value="">Choose an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -81,7 +81,7 @@
 
         <h5><strong>Question 5</strong></h5>
         <p>I see myself as extroverted, enthusiastic.</p>
-        <select data-placeholder="" class="browser-default" id="q5">
+        <select data-placeholder="" class="chosen-select" id="q5">
             <option value="">Choose an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -93,7 +93,7 @@
 
         <h5><strong>Question 6</strong></h5>
         <p>I see myself as extroverted, enthusiastic.</p>
-        <select data-placeholder="" class="browser-default" id="q6">
+        <select data-placeholder="" class="chosen-select" id="q6">
             <option value="">Choose an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -104,7 +104,7 @@
 
         <h5><strong>Question 7</strong></h5>
         <p>I see myself as extroverted, enthusiastic.</p>
-        <select data-placeholder="" class="browser-default" id="q7">
+        <select data-placeholder="" class="chosen-select" id="q7">
             <option value="">Choose an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -115,7 +115,7 @@
 
         <h5><strong>Question 8</strong></h5>
         <p>I see myself as extroverted, enthusiastic.</p>
-        <select data-placeholder="" class="browser-default" id="q8">
+        <select data-placeholder="" class="chosen-select" id="q8">
             <option value="">Choose an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -197,6 +197,7 @@
             $("#submit").on("click", function (event) {
                 event.preventDefault();
 
+
                 // Form validation
                 function validateForm() {
                     var isValid = true;
@@ -234,6 +235,8 @@
                             $("#q10").val()
                         ]
                     };
+                    $("#name").val("");
+                    $("#photo").val("");
 
                     // AJAX post the data to the friends API.
                     $.post("/api/friends", userData, function (data) {
