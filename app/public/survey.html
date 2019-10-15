@@ -21,6 +21,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -147,8 +151,8 @@
             <option value="5">5 (Strongly Agree)</option>
         </select>
         <br> ----------------------------------- <br>
-        <div class="submitButton">
-            <button type="button" class="btn btn-primary">Submit</button>
+        <div class="submit">
+            <button type="button" class="btn btn-primary" id="submit">Submit</button>
 
             <div id="results-modal" class="modal fade" role="dialog">
                 <div class="modal-dialog">
@@ -196,6 +200,7 @@
             // Capture the form inputs
             $("#submit").on("click", function (event) {
                 event.preventDefault();
+                alert("clicked");
 
 
                 // Form validation
