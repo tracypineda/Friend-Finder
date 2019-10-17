@@ -1,7 +1,7 @@
 var friends = [
     {
     "name": "Tracy",
-    "photo": "https://www.pexels.com/photo/four-orange-jellyfish-wallpaper-1784578/",
+    "photo": "https://image.shutterstock.com/image-photo/colorful-group-pack-alpacas-260nw-1032345970.jpg",
     "scores": [
         1,
         3,
